@@ -59,20 +59,8 @@ function Navigation() {
           justifyContent: "space-between",
         }}
       >
-        <a
-          href="#"
-          style={{
-            fontFamily: "var(--font-playfair), 'Playfair Display', serif",
-            fontWeight: 700,
-            fontStyle: "italic",
-            fontSize: "0.9rem",
-            color: scrolled ? "var(--color-brown-title)" : "rgba(255,255,255,0.85)",
-            textDecoration: "none",
-            transition: "color 0.4s ease",
-          }}
-        >
-          TGPM
-        </a>
+
+        <Image src={scrolled ? "/logo.png" : "/logo_white.png"} alt="Logo" width={25} height={25} />
         <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
           {links.map((link) => (
             <a

@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const playfair = Playfair_Display({
+const playfair = localFont({
+  src: [
+    { path: "../fonts/PlayfairDisplay-Regular.ttf", weight: "400", style: "normal" },
+    { path: "../fonts/PlayfairDisplay-Bold.ttf", weight: "700", style: "normal" },
+    { path: "../fonts/PlayfairDisplay-ExtraBold.ttf", weight: "800", style: "normal" },
+    { path: "../fonts/PlayfairDisplay-Black.ttf", weight: "900", style: "normal" },
+  ],
   variable: "--font-playfair",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
 });
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+const plexMono = localFont({
+  src: [
+    { path: "../fonts/IBMPlexMono-Light.ttf", weight: "300", style: "normal" },
+    { path: "../fonts/IBMPlexMono-Regular.ttf", weight: "400", style: "normal" },
+    { path: "../fonts/IBMPlexMono-Medium.ttf", weight: "500", style: "normal" },
+    { path: "../fonts/IBMPlexMono-SemiBold.ttf", weight: "600", style: "normal" },
+    { path: "../fonts/IBMPlexMono-Bold.ttf", weight: "700", style: "normal" },
+  ],
+  variable: "--font-plex-mono",
 });
 
 export const metadata: Metadata = {
@@ -26,6 +34,9 @@ export const metadata: Metadata = {
     "fashion",
     "chapeau connecté",
   ],
+  icons: {
+    icon: "/logo.png",
+  },
   openGraph: {
     title: "Trop Grand Pour Moi — Camille Coadou",
     description:
@@ -41,7 +52,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${playfair.variable} ${inter.variable}`}>
+      <body className={`${playfair.variable} ${plexMono.variable}`}>
         {children}
       </body>
     </html>

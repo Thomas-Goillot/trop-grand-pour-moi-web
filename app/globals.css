@@ -6,19 +6,19 @@
 /* ===== THEME TOKENS ===== */
 @theme inline {
   --font-playfair: var(--font-playfair);
-  --font-inter: var(--font-inter);
+  --font-plex-mono: var(--font-plex-mono);
   --font-script: "Great Vibes", cursive;
 
-  --color-cream: #f5f0eb;
-  --color-cream-dark: #ebe4dc;
-  --color-mauve: #9b7b7b;
-  --color-mauve-light: #b09595;
-  --color-mauve-dark: #7a5f5f;
-  --color-brown-title: #8b6b6b;
-  --color-brown-body: #5a4a4a;
-  --color-brown-light: #a08080;
-  --color-off-white: #faf7f4;
-  --color-white-soft: #f8f4f0;
+  --color-cream: #f4efe9;
+  --color-cream-dark: #e8e2dd;
+  --color-mauve: #a48983;
+  --color-mauve-light: #b8a19c;
+  --color-mauve-dark: #8a706b;
+  --color-brown-title: #111111;
+  --color-brown-body: #1a1a1a;
+  --color-brown-light: #62615e;
+  --color-off-white: #f8f5f2;
+  --color-white-soft: #fcfaf8;
 }
 
 /* ===== BASE STYLES ===== */
@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   background-color: var(--color-cream);
   color: var(--color-brown-body);
   overflow-x: hidden;
@@ -72,7 +72,7 @@ h4 {
 
 .nav-link {
   position: relative;
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -140,7 +140,7 @@ h4 {
 }
 
 .hero-credit {
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-size: 0.7rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -217,7 +217,7 @@ h4 {
 }
 
 .placeholder-text {
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -269,7 +269,7 @@ h4 {
 }
 
 .collection-label span {
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-size: 0.65rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -417,7 +417,7 @@ h4 {
 }
 
 .scroll-cta span {
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -450,7 +450,7 @@ h4 {
   line-height: 1.9;
   font-size: 0.95rem;
   color: var(--color-brown-body);
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-weight: 300;
 }
 
@@ -469,7 +469,7 @@ h4 {
   line-height: 1.8;
   font-size: 0.9rem;
   color: var(--color-brown-body);
-  font-family: var(--font-inter), "Inter", sans-serif;
+  font-family: var(--font-plex-mono), "IBM Plex Mono", monospace;
   font-weight: 300;
 }
 
