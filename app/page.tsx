@@ -192,14 +192,22 @@ function CollectionSection() {
   const ref = useReveal();
 
   const silhouettes = [
-    "/collection1.png",
-    "/collection2.png",
-    "/collection1.png",
-    "/collection1.png",
-    "/collection1.png",
-    "/collection1.png",
-    "/collection1.png",
-    "/collection1.png",
+    "/0.jpeg",
+    "/0_2.jpg",
+    "/1.jpg",
+    "/1_2.jpg",
+    "/2.jpg",
+    "/3.jpg",
+    "/4.png",
+    "/5.jpg",
+    "/5_2.jpg",
+    "/6.jpg",
+    "/6_2.jpg",
+    "/7.jpg",
+    "/7_2.jpg",
+    "/8.jpg",
+    "/9.jpg",
+    "/9_2.jpg"
   ];
 
   return (
@@ -264,14 +272,14 @@ function PropositionSection() {
       </p>
 
       <div className="proposition-grid">
-        <div className="proposition-card reveal reveal-delay-1">
-          <Placeholder label="Photo chapeau" />
+        <div className="proposition-card reveal reveal-delay-3">
+          <Image src="/inspi_3.png" alt="Bateaux" width={150} height={250} style={{ width: "100%", height: "100%" }} />
         </div>
         <div className="proposition-card reveal reveal-delay-2">
-          <Placeholder label="Bateaux en papier" />
+          <Image src="/inspi_2.png" alt="Bateaux" width={150} height={250} style={{ width: "100%", height: "100%" }} />
         </div>
-        <div className="proposition-card reveal reveal-delay-3">
-          <Placeholder label="Sketch chapeau" />
+        <div className="proposition-card reveal reveal-delay-1">
+          <Image src="/inspi_1.png" alt="Chapeau" width={150} height={250} style={{ width: "100%", height: "100%" }} />
         </div>
       </div>
     </section>
